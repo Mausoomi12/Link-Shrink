@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+   
+    <title>Link Shrink</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+  </head>
+  <body>
+    <div class=" container">
+      <div class="bg"></div>
+      <div class="bg bg2"></div>
+      <div class="bg bg3"></div>
+      <!-- <div class="content">
+        <h1>Sliding Diagonals Background Effect</h1>
+      </div> -->
+   
+ <div class="context">
+    <h1>Link <span>Shrink!</span></h1></div>
+   
+    
+
+    <% if (locals.error) { %>
+    <p class="error"><%= error %></p>
+    <% } %>
+
+    <form action="/" method="post">
+      <input type="url" name="url" id="url" placeholder="Paste your url here..." />
+      <input type="submit" value="Shorten" />
+    </form>
+
+    <div class="short-url">
+      <% if (locals.short_url) { %>
+      <a href="<%= short_url %>"><%= short_url %> </a>
+      <% } %>
+      
+    
+</div>
+    </div>
+    </div>
+  </body>
+</html>
